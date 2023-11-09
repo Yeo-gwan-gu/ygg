@@ -1,4 +1,4 @@
-// 클래스 단위로 코딩을 한다.
+// 클래스 단위로 코딩을 한다
 // 시작, 메인 클래스
 // JavaSE 프로그램
 public class FourArithmetic {
