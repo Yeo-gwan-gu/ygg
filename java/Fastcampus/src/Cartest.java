@@ -26,6 +26,6 @@ public class Cartest {
         float gasmi = 12.5F;
         System.out.println("gasmi = " + gasmi);
         boolean auto = true;
-        System.out.println("auto = " + auto);기
+        System.out.println("auto = " + auto);
     }
 }
