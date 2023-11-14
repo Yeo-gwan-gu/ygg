@@ -9,7 +9,7 @@ public class MovieTest {
         // 등급 : 12세
 
         Movie m = new Movie();
-        m.title = "아바타";성
+        m.title = "아바타";
         m.day = "2022.12.14";
         m.hero = "제이크 설리";
         m.genre = "액션";
