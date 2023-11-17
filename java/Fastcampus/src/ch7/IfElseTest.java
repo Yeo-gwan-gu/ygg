@@ -28,17 +28,13 @@ public class IfElseTest {
         }
 
         // Q. 년도를 입력 받아서 해당 년도가 윤년인지 아닌지를 판단하여 출력하는 코드를 작성하시오.
-        // (윤년:2월29일이 존재하는 연도, 4의 배수이며 100의 배수인 해 이거나 400의 배수인 해)
+        // (윤년:2월29일이 존재하는 연도, 4의 배수이거나 (100으로 나누어 떨어지는 년도를 제외하고) 400의 배수인 년도)
 
         Scanner scan2 = new Scanner(System.in);
         System.out.print("년도를 입력하시오 : ");
-        int num2 = scan2.nextInt();
+        int year = scan2.nextInt();
 
-        if (num2 % 4 == 0) {
-            System.out.println("윤년입니다.");
-        } else if (num2 % 100 == 0) {
-            System.out.println("윤년입니다.");
-        } else if (num2 % 400 == 0) {
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             System.out.println("윤년입니다.");
         } else {
             System.out.println("윤년이 아닙니다.");
