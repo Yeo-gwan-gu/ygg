@@ -43,5 +43,6 @@ public class IfElseTest {
         } else {
             System.out.println("윤년이 아닙니다.");
         }
+
     }
 }
