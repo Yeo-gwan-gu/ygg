@@ -1,6 +1,6 @@
 package ch7;
 
-public class WhileLoopTeset {
+public class WhileLoopTest {
     public static void main(String[] args) {
         // Q. 0~5까지의 수를 출력하시오.
         int i = 0; // 초기식
@@ -37,6 +37,5 @@ public class WhileLoopTeset {
             System.out.print(i+"\t");
             i++;
         } while(i <= 10);
-
     }
 }
