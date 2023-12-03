@@ -16,25 +16,91 @@ public class MovieOperations {
         System.out.println("제목에 '-1'을 입력하면 입력을 종료합니다.");
 
         while (true) {
-            System.out.print("영화"+(count+1)+"번 제목: ");
-            String title = scan.nextLine();
+            String title;
+            while (true) {
+                System.out.print("영화"+(count+1)+"번 제목: ");
+                title = scan.nextLine();
+                if (title.length() > 0) {
+                    break;
+                } else {
+                    System.out.println("영화의 제목이 입력되지 않았습니다. 다시 입력해 주세요.");
+                }
+            }
 
             if (title.equals("-1")) {
                 break;
             } // -1 입력 시 break
 
-            System.out.print("주인공: ");
-            String major = scan.nextLine();
+            String major;
+            while (true) {
+                System.out.print("주인공: ");
+                major = scan.nextLine();
+                if (major.length() > 0) {
+                    break;
+                } else {
+                    System.out.println("주인공의 이름이 입력되지 않았습니다. 다시 입력해 주세요.");
+                }
+            }
 
-            System.out.print("상영시간: ");
-            int runningTime = scan.nextInt();
+            int runningTime;
+            while (true) {
+                System.out.print("상영시간: ");
+                String runningTimeStr = scan.nextLine();
+                if (!runningTimeStr.isEmpty()) {
+                    try {
+                        runningTime = Integer.parseInt(runningTimeStr);
+                        if (runningTime >= 1 && runningTime <= 360) {
+                            break;
+                        } else {
+                            System.out.println("상영시간은 1~360 사이의 값으로 다시 입력해 주세요.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("상영시간은 숫자로 입력해 주세요.");
+                    }
+                } else {
+                    System.out.println("상영시간이 입력되지 않았습니다. 다시 입력해 주세요.");
+                }
+            }
 
-            System.out.print("평점: ");
-            float rating = scan.nextFloat();
+            float rating;
+            while (true) {
+                System.out.print("평점: ");
+                String ratingStr = scan.nextLine();
+                if (!ratingStr.isEmpty()) {
+                    try {
+                        rating = Integer.parseInt(ratingStr);
+                        if (rating >= 0 && rating <= 10) {
+                            break;
+                        } else {
+                            System.out.println("평점은 0~10 사이의 값으로 다시 입력해 주세요.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("평점은 숫자로만 입력해 주세요.");
+                    }
+                } else {
+                    System.out.println("평점이 입력되지 않았습니다. 다시 입력해 주세요.");
+                }
+            }
 
-            System.out.print("장르(1: 드라마, 2: 액션, 3: 호러): ");
-            int genre = scan.nextInt();
-            scan.nextLine();
+            int genre;
+            while (true) {
+                System.out.print("장르(1: 드라마, 2: 액션, 3: 호러): ");
+                String genreStr = scan.nextLine();
+                if (!genreStr.isEmpty()) {
+                    try {
+                        genre = Integer.parseInt(genreStr);
+                        if (genre >= 0 && genre <= 10) {
+                            break;
+                        } else {
+                            System.out.println("장르는 1,2,3 중의 값으로 다시 입력해 주세요.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("장르는 숫자로만 입력해 주세요.");
+                    }
+                } else {
+                    System.out.println("장르가 입력되지 않았습니다. 다시 입력해 주세요.");
+                }
+            }
 
             MovieDTO movie = new MovieDTO();
             movie.setTitle(title);
@@ -78,9 +144,30 @@ public class MovieOperations {
 
     // 장르별 영화 검색
     public void searchMovieByGenre(Scanner scan) {
-        System.out.println("검색할 장르를 입력하세요 (1: 드라마, 2: 액션, 3: 호러): ");
-        int genre = scan.nextInt();
-        scan.nextLine();
+//        System.out.println("검색할 장르를 입력하세요 (1: 드라마, 2: 액션, 3: 호러): ");
+//        int genre = scan.nextInt();
+//        scan.nextLine();
+
+
+        int genre;
+        while (true) {
+            System.out.print("검색할 장르를 입력하세요 (1: 드라마, 2: 액션, 3: 호러): ");
+            String genreStr = scan.nextLine();
+            if (!genreStr.isEmpty()) {
+                try {
+                    genre = Integer.parseInt(genreStr);
+                    if (genre > 0 && genre < 4) {
+                        break;
+                    } else {
+                        System.out.println("장르는 1,2,3 중의 값으로 다시 입력해 주세요.");
+                    }
+                } catch (NumberFormatException e) {
+                    System.out.println("장르은 숫자로 입력해 주세요.");
+                }
+            } else {
+                System.out.println("장르가 입력되지 않았습니다. 다시 입력해 주세요.");
+            }
+        }
 
         System.out.println(genre+"장르의 영화를 검색합니다.");
 
