@@ -104,7 +104,7 @@ public class MovieOperations {
             }
         }
         if (!found) {
-            System.out.println("잘못된 장르 번호입니다. 다시 입력하세요.");
+            System.out.println("잘못된 장르 번호입니다. (1: 드라마, 2: 액션, 3: 호러) 중에 다시 입력하세요.");
         }
     } // searchMovieByGenre_
 }
