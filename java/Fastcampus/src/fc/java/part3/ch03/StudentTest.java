@@ -19,6 +19,5 @@ public class StudentTest {
         // Q. 잘 설계된 학생(Student) 객체를 설계하고 데이터를 저장한 후 출력하시오.
         Student std = new Student("홍길동", "컴퓨터공학과", 37, "bit@empas.com", 20231110, "010-1234-5678");
         System.out.println(std.toString());
-
     }
 }
