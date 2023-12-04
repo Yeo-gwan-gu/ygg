@@ -37,7 +37,6 @@ public class MovieProcessor {
             System.out.print("메뉴입력: ");
 
         } // while_
-
         scan.close();
     }
 }
