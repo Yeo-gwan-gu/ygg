@@ -1,3 +1,43 @@
-**MVCS 패턴을 이용한 사칙연산 계산기 프로그램 구현**
+MVCS 패턴을 이용한 사칙연산 계산기 프로그램 구현
 
+아래의 요구사항을 만족하는 4가지 기능을 가지고 있는 계산기 프로그램을 구현하시오.
+(단, 클래스의 역할을 MVCS로 구분하여 설계할 것)
+M : Model --> NumberDTO.java
+V : View --> calcView.java
+C : Controller --> CalcController.java
+S : Service : ICalcService.java(인터페이스), CalsServiceBiz.java
+* main class : Java2CalcMain.java
 
+1. 두 수와 결과 값을 저장할 모델 클래스(Model)를 정의한다. --> NumberDTO.java
+- DTO 설계 규칙에 맞게 잘 설계된 DTO로 설계하시오.
+- 수1(num1 : int), 수2(num2 : int), 결과(result : double) 3개의 멤버로 되어있다.
+
+2. 4개의 계산기능을 가지고 있는 서비스 인터페이스를 정의한다. --> ICalcService.java
+[기능 정의]
+ 1) + 두 수를 더하는 기능, 결과는 소수점이하 두 자리까지 : add
+ 2) - 첫 번째 수에서 두 번째 수를 빼는 기능 : sub
+ 3) * 두 수를 곱하는 기능 : mul
+ 4) / 첫번 째 수를 두 번째 수로 나누는 기능 : div
+
+3. 인터페이스(ICalcService)를 구현하는 서비스 클래스(객체)(Service)를 정의한다. --> CalcServiceBiz.java
+- public class CalcServiceBiz implements ICalcService {    }
+- ICalcService에 정의된 4개의 기능(add, sub, mul, div)을 구현한다.
+- 각 기능에서 계산된 결과는 numberDTO의 result에 저장하고 NumberDTO를 리턴한다.
+
+4. 컨트롤러(Controller) 객체를 만든다. --> CalcController.java
+- 컨트롤러는 서비스 객체(ICalcService)가 필요하기에 생성자에서 받도록 한다.
+- 컨트롤러에 applicationStart() 메서드를 구현한다.
+[applicationStart() 메서드에서는]
+ * 뷰 클래스(CalcView)를 이용하여 데이터를 입력 받는다.
+ * 서비스 객체(ICalcService)의 add, sub, mul, div 기능을 이용하여 계산을 처리한다.
+ * 계산된 결과는 뷰 클래스(CalcView)의 printResult 메서드를 이용하여 출력한다.
+ * 계산기 프로그램은 계속 동작하되 연산자에 E라는 문자가 들어오면  프로그램을 종료할 것.
+
+5. 입출력 뷰(View) 클래스를 정의한다. --> CalcView.java
+- 두 수 (num1, num2)와 연산자(op)를 입력받는 기능은 inputNumber 메서드로 구현한다.(Scanner 이용)
+- 계산 결과를 출력하는 기능은 printResult 메서드로 구현한다.(소수점 이하 두 자리까지만 출력)
+
+[입력 화면 inputNumber 메서드 구현 예시]
+ 두 개의 수와 연산자를 입력하세요.(ex 6 7 +) : 6  7  +
+[출력 화면 printResult 메서드 구현 예시]
+ 두 수 6과 7의 add의 결과는 13.00입니다.
