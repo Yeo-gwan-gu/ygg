@@ -11,11 +11,13 @@ public class InterfaceTest {
         remo.chDown();
         remo.volUp();
         remo.volDown();
+        remo.internet();
 
         remo = new TV();
         remo.chUp();
         remo.chDown();
         remo.volUp();
         remo.volDown();
+        remo.internet();
     }
 }

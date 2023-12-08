@@ -1,4 +1,4 @@
-package be7.test;
+package be7.test.test1;
 import java.util.Scanner;
 
 public class MovieOperations {
@@ -89,7 +89,7 @@ public class MovieOperations {
                 if (!genreStr.isEmpty()) {
                     try {
                         genre = Integer.parseInt(genreStr);
-                        if (genre >= 0 && genre <= 10) {
+                        if (genre >= 1 && genre <= 3) {
                             break;
                         } else {
                             System.out.println("장르는 1,2,3 중의 값으로 다시 입력해 주세요.");

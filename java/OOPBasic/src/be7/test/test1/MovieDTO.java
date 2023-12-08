@@ -1,4 +1,4 @@
-package be7.test;
+package be7.test.test1;
 
 public class MovieDTO {
     private String title; // 제목

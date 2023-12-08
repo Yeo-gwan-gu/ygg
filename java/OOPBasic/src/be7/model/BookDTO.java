@@ -11,7 +11,17 @@ public class BookDTO { // DTO --> 어떻게 설계하는 것이 잘 설계하는
     // 2. 생략된 메서드(디폴트 생성자 메서드)를 명시적으로 만든다.
     // 객체를 생성해준다 (내부적으로 이루어진다.)
     public BookDTO() {
+//        this.title="자바";
+//        this.price=30000;
+//        this.name="김길동";
+//        this.page=500;
+    }
 
+    public BookDTO(String title, int price, String name, int page) {
+        this.title=title;
+        this.price=price;
+        this.name=name;
+        this.page=page;
     }
 
     // 3. setter method(데이터 넣기) / getter method(값 얻어오기) 만들기
@@ -43,5 +53,15 @@ public class BookDTO { // DTO --> 어떻게 설계하는 것이 잘 설계하는
     }
     public void setPage(int page) {
         this.page = page;
+    }
+
+    @Override
+    public String toString() {
+        return "BookDTO{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                ", name='" + name + '\'' +
+                ", page=" + page +
+                '}';
     }
 }
