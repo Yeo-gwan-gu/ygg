@@ -29,4 +29,10 @@ public class CalcServiceBiz implements ICalcService {
         number.setResult(result);
         return number;
     }
+    @Override
+    public NumberDTO na(NumberDTO number) {
+        double result = number.getNum1() % number.getNum2();
+        number.setResult(result);
+        return number;
+    }
 }

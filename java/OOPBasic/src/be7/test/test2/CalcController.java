@@ -32,6 +32,9 @@ public class CalcController {
                 case "/":
                     number = service.div(number);
                     break;
+                case "%":
+                    number = service.na(number);
+                    break;
                 case "E":
                     isRunning = false;
                     break;

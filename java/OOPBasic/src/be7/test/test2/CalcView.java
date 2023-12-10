@@ -35,6 +35,9 @@ public class CalcView {
             case "/":
                 System.out.printf("div의 결과는 %.2f입니다.\n", number.getResult());
                 break;
+            case "%":
+                System.out.printf("na의 결과는 %.2f입니다.\n", number.getResult());
+                break;
             case "E":
                 System.out.printf("프로그램이 종료됩니다.");
                 break;

@@ -8,6 +8,8 @@ public interface ICalcService {
     NumberDTO sub(NumberDTO number);
     NumberDTO mul(NumberDTO number);
     NumberDTO div(NumberDTO number);
+    NumberDTO na(NumberDTO number);
+
 
 
 
