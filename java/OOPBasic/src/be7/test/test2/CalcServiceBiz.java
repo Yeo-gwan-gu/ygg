@@ -25,7 +25,7 @@ public class CalcServiceBiz implements ICalcService {
 
     @Override
     public NumberDTO div(NumberDTO number) {
-        double result = number.getNum1() / number.getNum2();
+        double result = (double)number.getNum1() / (double)number.getNum2();
         number.setResult(result);
         return number;
     }
