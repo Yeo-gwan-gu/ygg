@@ -3,6 +3,8 @@ package be7.oop2;
 import be7.model.IntArray;
 import be7.model.Remocon;
 
+import java.util.ArrayList;
+
 public class EX28 {
     public static void main(String[] args) {
         // 1. 혼자서는 동작을 못한다.
