@@ -8,8 +8,14 @@ public class ObjectArray {
     private int size = 0; // 원소 개수
 
 //  생성 동작
+//    public ObjectArray() {
+//        elements = new Object[DEFAULT_CARACITY]; // 5개 크기 배열
+//    }
     public ObjectArray() {
-        elements = new Object[DEFAULT_CARACITY]; // 5개 크기 배열
+        this(5); // 5개 크기 배열
+    }
+    public ObjectArray(int capacity) {
+        elements = new Object[capacity]; // 원하는 크기 배열 생성
     }
 
 //  저장 동작
