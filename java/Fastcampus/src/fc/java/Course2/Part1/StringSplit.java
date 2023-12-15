@@ -1,5 +1,7 @@
 package fc.java.Course2.Part1;
 
+import java.util.Scanner;
+
 public class StringSplit {
     public static void main(String[] args) {
 //      문자열 분리하기
@@ -19,6 +21,16 @@ public class StringSplit {
 
         for (String ss : strArray2) {
             System.out.println(ss); // Hello ↩  ︎World ↩  ︎Java
+        }
+
+//      Scanner를 이용하여 문자열의 공백을 구분자로 구분하라.
+        Scanner scan = new Scanner(System.in);
+        System.out.print("문자열 입력 : ");
+        String strr = scan.nextLine();
+        String[] strArr = strr.split("\\s+");
+
+        for (String sss : strArr) {
+            System.out.println(sss);
         }
     }
 }
