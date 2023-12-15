@@ -1,6 +1,6 @@
 package fc.java.Course2.model2;
 
-public class MySQLDerver implements Connection{
+public class MySQLDriver implements Connection{
 
     @Override
     public void getConnection(String url, String username, String password) {
