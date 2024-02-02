@@ -42,16 +42,10 @@
 
 <br>
 
-## ⚠️ 유의사항
+## 🔎 유의사항
 - rootcontext.xml ==> username, password 사전 설정 필요
 
 <br>
 
 ## 🗂️ 파일 구조
-![디렉토리](https://velog.velcdn.com/images/yeokg1130/post/20f417db-286b-4aaa-8f14-f33cc8141b08/image.png)
-
-## 유의사항
-- rootcontext.xml ==> username, password 사전 설정 필요
-
-## 파일 구조
 ![디렉토리](https://velog.velcdn.com/images/yeokg1130/post/20f417db-286b-4aaa-8f14-f33cc8141b08/image.png)
