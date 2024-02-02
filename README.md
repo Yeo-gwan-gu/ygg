@@ -3,8 +3,8 @@
 
 ## 프로젝트 소개
 - 여행별 여러 개의 여정을 담아 기록, 수정할 수 있도록 관리하는 스프링 기반 RESTful API <br>
-[명세서]https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab
-[RFP]https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit
+[명세서](https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab)
+[RFP](https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit)
 
 ## 프로젝트 기간
 - 2024-01-29 ~ 2024-02-02
@@ -23,12 +23,13 @@
 - Database : MySQL
 
 ## API 명세서
-[API 명세서]https://documenter.getpostman.com/view/32623056/2s9YyvAf7C
+[API 명세서](https://documenter.getpostman.com/view/32623056/2s9YyvAf7C)
 
 ## ERD 설계도
 
 
 ## 파일 구조
+<br>
 
 ├── build.gradle
 ├── README.md
@@ -64,6 +65,7 @@
 │                       └── servlet-context.xml
 └
 
+<br>
 
 ## 유의사항
 - rootcontext.xml ==> username, password 사전 설정 필요
