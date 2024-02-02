@@ -26,48 +26,10 @@
 [API 명세서](https://documenter.getpostman.com/view/32623056/2s9YyvAf7C)
 
 ## ERD 설계도
-
-
-## 파일 구조
-<br>
-
-![파일구조](https://velog.velcdn.com/images/yeokg1130/post/3683d5c2-8515-4abe-9747-450b1e0755b4/image.png)
-
-├── build.gradle
-├── README.md
-├── src
-│   └── main
-│       ├── java
-│       │   └── com.travel
-│       │       ├── domain
-│       │       │   ├── itinerary
-│       │       │   │   ├── controller
-│       │       │   │   ├── entity
-│       │       │   │   ├── repository
-│       │       │   │   └── service
-│       │       │   └── trip
-│       │       │       ├── controller
-│       │       │       ├── entity
-│       │       │       ├── repository
-│       │       │       └── service
-│       │       ├── exception
-│       │       └── model
-│       ├── resources
-│       │   └── mybatis-config
-│       │       ├── config.xml
-│       │       └── mapper
-│       │           ├── ItineraryMapper.xml
-│       │           └── TripMapper.xml
-│       └── webapp
-│           └── WEB-INF
-│               ├── web.xml
-│               └── spring
-│                   ├── root-context.xml
-│                   └── appServlet
-│                       └── servlet-context.xml
-└
-
-<br>
+![ERD](https://velog.velcdn.com/images/yeokg1130/post/f0a80da5-d859-4739-b60f-a5ef91f99737/image.png)
 
 ## 유의사항
 - rootcontext.xml ==> username, password 사전 설정 필요
+
+## 파일 구조
+![디렉토리](https://velog.velcdn.com/images/yeokg1130/post/20f417db-286b-4aaa-8f14-f33cc8141b08/image.png)
