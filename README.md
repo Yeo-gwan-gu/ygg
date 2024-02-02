@@ -31,6 +31,8 @@
 ## 파일 구조
 <br>
 
+![파일구조](https://velog.velcdn.com/images/yeokg1130/post/3683d5c2-8515-4abe-9747-450b1e0755b4/image.png)
+
 ├── build.gradle
 ├── README.md
 ├── src
