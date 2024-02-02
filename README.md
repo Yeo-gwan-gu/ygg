@@ -5,8 +5,9 @@
 
 ## 📔 프로젝트 소개
 - 여행별 여러 개의 여정을 담아 기록, 수정할 수 있도록 관리하는 스프링 기반 RESTful API <br>
-[명세서](https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab)
-[RFP](https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit)
+[명세서↘︎](https://www.notion.so/2-9661b25933204481ace02cdb37d70de8#450e3beb32874855ae65ad2c1104c8ab)
+<br>
+[RFP↘︎](https://docs.google.com/document/d/1RSqH9ILlEo4juLZLKocfVOdKH9eoTT5U/edit)
 
 <br>
 
@@ -33,12 +34,12 @@
 <br>
 
 ## 🧾 API 명세서
-[API 명세서](https://documenter.getpostman.com/view/32623056/2s9YyvAf7C)
+[API 명세서↘︎](https://documenter.getpostman.com/view/32623056/2s9YyvAf7C)
 
 <br>
 
 ## 📊 ERD 설계도
-![ERD](https://velog.velcdn.com/images/yeokg1130/post/f0a80da5-d859-4739-b60f-a5ef91f99737/image.png)
+![ERD↘︎](https://velog.velcdn.com/images/yeokg1130/post/f0a80da5-d859-4739-b60f-a5ef91f99737/image.png)
 
 <br>
 
@@ -48,4 +49,4 @@
 <br>
 
 ## 🗂️ 파일 구조
-![디렉토리](https://velog.velcdn.com/images/yeokg1130/post/20f417db-286b-4aaa-8f14-f33cc8141b08/image.png)
+![디렉토리↘︎](https://velog.velcdn.com/images/yeokg1130/post/20f417db-286b-4aaa-8f14-f33cc8141b08/image.png)
